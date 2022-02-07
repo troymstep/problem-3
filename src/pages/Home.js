@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import { MainMenu } from '../common/MainMenu';
+import StatefulSwitch from '../modules/samples/StatefulSwitch';
 
 export const Home = () => {
   return (
@@ -28,6 +29,9 @@ export const Home = () => {
             <Typography>
               Id anim amet mollit amet consectetur fugiat sint quis. Aliquip aliqua magna duis amet culpa officia anim. Velit magna pariatur consequat ea. Laborum nisi Lorem voluptate non cupidatat Lorem commodo. Labore cupidatat non proident nostrud amet. Incididunt dolor elit duis sit. Ipsum occaecat esse elit consequat commodo nisi et nostrud esse quis et dolor minim.
             </Typography>
+          </Grid>
+          <Grid item>
+            <StatefulSwitch />
           </Grid>
         </Grid>
       </Grid>

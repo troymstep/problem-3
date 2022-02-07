@@ -1,4 +1,4 @@
-import { Grid, Link as MuiLink } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import styled from 'styled-components';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
