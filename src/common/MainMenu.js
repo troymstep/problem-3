@@ -29,6 +29,9 @@ export const MainMenu = () => {
       <Grid item>
         <Link to="/simple-form">Simple Form</Link>
       </Grid>
+      <Grid item>
+        <Link to="/example-form">Example Form</Link>
+      </Grid>
     </MenuWrapper>
   );
 };

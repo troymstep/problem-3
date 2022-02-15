@@ -7,6 +7,7 @@ import { Home } from "./pages/Home";
 import { Page1 } from "./pages/Page1";
 import { NotFound } from "./pages/NotFound";
 import { SimpleFormPage } from "./pages/SimpleFormPage";
+import { ExampleFormPage } from "./pages/ExampleFormPage";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/page1" element={<Page1 />} />
+        <Route path="/example-form" element={<ExampleFormPage />} />
         <Route path="/simple-form" element={<SimpleFormPage />} />
         <Route element={<NotFound />} />
       </Routes>
