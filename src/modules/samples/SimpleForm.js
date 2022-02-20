@@ -16,12 +16,13 @@ const validationSchema = yup.object({
 
 export const SimpleForm = () => {
   const { values, errors, handleChange, handleBlur, handleSubmit } = useFormik({
-    initialValues,
     validationSchema,
+    initialValues,
     onSubmit: (values) => {
       console.log(values);
     },
   });
+
   return (
     <form onSubmit={handleSubmit}>
       <Container>
