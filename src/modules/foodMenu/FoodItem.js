@@ -8,19 +8,18 @@ import {
 } from "@material-ui/core";
 import styled from "styled-components";
 import React from "react";
+import { useCart } from "../shoppingCart/CartContext";
 
 const StyledCard = styled(Card)`
   height: 100%;
 `;
 
-export const FoodItem = ({
-  id,
-  title,
-  description,
-  imageMedium,
-  price,
-  onAddItem,
-}) => {
+export const FoodItem = (item) => {
+  const { id, title, description, imageMedium, price } = item;
+  const cart = useCart();
+
+  const onAddItem = (itemId) => cart.addItem(itemId);
+
   return (
     <StyledCard>
       <Grid
