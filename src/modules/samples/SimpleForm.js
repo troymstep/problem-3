@@ -1,8 +1,7 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
 import React from "react";
-import { Button, Container, Grid, TextField } from "@material-ui/core";
-import { StatefulSwitch } from "../modules/samples/StatefulSwitch";
+import { Button, Container, Grid, TextField, Checkbox, FormGroup, FormControlLabel} from "@material-ui/core";
 
 // define our initial state for our form
 const initialValues = {
@@ -30,41 +29,43 @@ export const SimpleForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <Container>
-        <Grid item xs={12}>
-          <TextField
-            id="username"
-            label="Name"
-            variant="outlined"
-            value={values.username}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            error={!!errors.username}
-            helperText={errors.username}
-          />
-          <TextField
-            id="phonenumber"
-            label="Cell Phone Number"
-            variant="outlined"
-            value={values.phonenumber}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            error={!!errors.phonenumber}
-            helperText={errors.phonenumber}
-          />
-          <TextField
-            id="email"
-            label="Email Address"
-            variant="outlined"
-            value={values.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            error={!!errors.email}
-            helperText={errors.email}
-          />
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <TextField
+              id="username"
+              label="Name"
+              variant="outlined"
+              value={values.username}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              error={!!errors.username}
+              helperText={errors.username}
+            />
+            <TextField
+              id="phonenumber"
+              label="Cell Phone Number"
+              variant="outlined"
+              value={values.phonenumber}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              error={!!errors.phonenumber}
+              helperText={errors.phonenumber}
+            />
+            <TextField
+              id="email"
+              label="Email Address"
+              variant="outlined"
+              value={values.email}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              error={!!errors.email}
+              helperText={errors.email}
+            />
+          </Grid>
         </Grid>
-        <Grid item>
-          <StatefulSwitch />
-        </Grid>
+        <FormGroup>
+          <FormControlLabel control={<Checkbox defaultChecked />} label="Opt-in to join mailing list" />
+        </FormGroup>
         <Grid item>
           <Button type="submit">Submit</Button>
         </Grid>
