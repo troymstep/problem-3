@@ -27,7 +27,7 @@ export const MainMenu = () => {
         <Link to="/page1">Page 1</Link>
       </Grid>
       <Grid item>
-        <Link to="/simple-form">Simple Form</Link>
+        <Link to="/simple-form">Registration</Link>
       </Grid>
       <Grid item>
         <Link to="/example-form">Example Form</Link>

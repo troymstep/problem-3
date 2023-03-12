@@ -7,13 +7,13 @@ export default function StatefulSwitch() {
   return (
     <Grid container spacing={2}>
       <Grid item>
-        <label>Stateful Switch</label>
+        <label>Opt-in to join the mailing list</label>
         <Switch
           id="aSwitch"
           checked={switchOn}
           onChange={() => setSwitchOn(!switchOn)}
         />
-        {switchOn && <p>The switch is on!</p>}
+        {switchOn && <p>Thank you!</p>}
       </Grid>
     </Grid>
   );

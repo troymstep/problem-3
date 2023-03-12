@@ -10,7 +10,7 @@ export const SimpleFormPage = () => {
         <MainMenu />
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h1">A Simple Form</Typography>
+        <Typography variant="h1">Registration</Typography>
       </Grid>
       <Grid item xs={12}>
         <SimpleForm />
