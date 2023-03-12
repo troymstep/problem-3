@@ -11,7 +11,7 @@ export const Home = () => {
         <MainMenu />
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h1">Home</Typography>
+        <Typography variant="h1">Hot Plates</Typography>
       </Grid>
       <Grid item xs={12}>
         <Grid container spacing={2}>
@@ -33,7 +33,7 @@ export const Home = () => {
             </Typography>
           </Grid>
           <Grid item xs={3}>
-            <Typography variant="h2">Side Bar</Typography>
+            <Typography variant="h2">Our Mission</Typography>
             <Typography>
               Id anim amet mollit amet consectetur fugiat sint quis. Aliquip
               aliqua magna duis amet culpa officia anim. Velit magna pariatur
@@ -42,12 +42,6 @@ export const Home = () => {
               dolor elit duis sit. Ipsum occaecat esse elit consequat commodo
               nisi et nostrud esse quis et dolor minim.
             </Typography>
-          </Grid>
-          <Grid item>
-            <StatefulSwitch />
-          </Grid>
-          <Grid item>
-            <StateExample />
           </Grid>
         </Grid>
       </Grid>

@@ -9,7 +9,7 @@ export const ExampleFormPage = () => {
         <MainMenu />
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h1">An Example Form</Typography>
+        <Typography variant="h1">Ratings & Reviews</Typography>
       </Grid>
       <Grid item xs={12}>
         <ExampleForm />

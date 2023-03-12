@@ -24,13 +24,13 @@ export const MainMenu = () => {
         <Link to="/">Home</Link>
       </Grid>
       <Grid item>
-        <Link to="/page1">Page 1</Link>
+        <Link to="/page1">Menu</Link>
       </Grid>
       <Grid item>
         <Link to="/simple-form">Registration</Link>
       </Grid>
       <Grid item>
-        <Link to="/example-form">Example Form</Link>
+        <Link to="/example-form">Ratings & Reviews</Link>
       </Grid>
     </MenuWrapper>
   );

@@ -9,7 +9,7 @@ export const Page1 = () => {
         <MainMenu />
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h1">Page 1</Typography>
+        <Typography variant="h1">Menu</Typography>
       </Grid>
       <Grid item xs={12}>
         <Typography variant="body1">
