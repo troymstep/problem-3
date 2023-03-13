@@ -1,8 +1,6 @@
 import { Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import { MainMenu } from "../common/MainMenu";
-import { StateExample } from "../modules/samples/StateExample";
-import StatefulSwitch from "../modules/samples/StatefulSwitch";
 
 export const Home = () => {
   return (
